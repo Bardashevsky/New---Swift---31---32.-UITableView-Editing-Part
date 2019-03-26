@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		4F8CB5A42248B428004D45BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CB5A32248B428004D45BA /* AppDelegate.swift */; };
-		4F8CB5A62248B428004D45BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CB5A52248B428004D45BA /* ViewController.swift */; };
 		4F8CB5A92248B428004D45BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F8CB5A72248B428004D45BA /* Main.storyboard */; };
 		4F8CB5AC2248B428004D45BA /* New___Swift___31___32__UITableView_Editing_Part.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CB5AA2248B428004D45BA /* New___Swift___31___32__UITableView_Editing_Part.xcdatamodeld */; };
 		4F8CB5AE2248B42A004D45BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F8CB5AD2248B42A004D45BA /* Assets.xcassets */; };
 		4F8CB5B12248B42A004D45BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F8CB5AF2248B42A004D45BA /* LaunchScreen.storyboard */; };
+		4F8CB5B92248C84C004D45BA /* OBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CB5B82248C84C004D45BA /* OBViewController.swift */; };
+		4F8CB5BB2248CEC1004D45BA /* OBStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CB5BA2248CEC1004D45BA /* OBStudent.swift */; };
+		4F8CB5BD2248CF15004D45BA /* OBGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CB5BC2248CF15004D45BA /* OBGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4F8CB5A02248B428004D45BA /* New - Swift - 31 - 32. UITableView Editing Part.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "New - Swift - 31 - 32. UITableView Editing Part.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F8CB5A32248B428004D45BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4F8CB5A52248B428004D45BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4F8CB5A82248B428004D45BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F8CB5AB2248B428004D45BA /* New___Swift___31___32__UITableView_Editing_Part.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "New___Swift___31___32__UITableView_Editing_Part.xcdatamodel"; sourceTree = "<group>"; };
 		4F8CB5AD2248B42A004D45BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F8CB5B02248B42A004D45BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F8CB5B22248B42A004D45BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F8CB5B82248C84C004D45BA /* OBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBViewController.swift; sourceTree = "<group>"; };
+		4F8CB5BA2248CEC1004D45BA /* OBStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBStudent.swift; sourceTree = "<group>"; };
+		4F8CB5BC2248CF15004D45BA /* OBGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				4F8CB5A32248B428004D45BA /* AppDelegate.swift */,
-				4F8CB5A52248B428004D45BA /* ViewController.swift */,
+				4F8CB5BE2248CF34004D45BA /* StudentsFiles */,
+				4F8CB5B82248C84C004D45BA /* OBViewController.swift */,
 				4F8CB5A72248B428004D45BA /* Main.storyboard */,
 				4F8CB5AD2248B42A004D45BA /* Assets.xcassets */,
 				4F8CB5AF2248B42A004D45BA /* LaunchScreen.storyboard */,
@@ -65,6 +70,15 @@
 				4F8CB5AA2248B428004D45BA /* New___Swift___31___32__UITableView_Editing_Part.xcdatamodeld */,
 			);
 			path = "New - Swift - 31 - 32. UITableView Editing Part";
+			sourceTree = "<group>";
+		};
+		4F8CB5BE2248CF34004D45BA /* StudentsFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4F8CB5BA2248CEC1004D45BA /* OBStudent.swift */,
+				4F8CB5BC2248CF15004D45BA /* OBGroup.swift */,
+			);
+			path = StudentsFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +113,7 @@
 				TargetAttributes = {
 					4F8CB59F2248B428004D45BA = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -139,8 +154,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F8CB5AC2248B428004D45BA /* New___Swift___31___32__UITableView_Editing_Part.xcdatamodeld in Sources */,
-				4F8CB5A62248B428004D45BA /* ViewController.swift in Sources */,
+				4F8CB5B92248C84C004D45BA /* OBViewController.swift in Sources */,
+				4F8CB5BB2248CEC1004D45BA /* OBStudent.swift in Sources */,
 				4F8CB5A42248B428004D45BA /* AppDelegate.swift in Sources */,
+				4F8CB5BD2248CF15004D45BA /* OBGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +312,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "OB.New---Swift---31---32--UITableView-Editing-Part";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -313,7 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "OB.New---Swift---31---32--UITableView-Editing-Part";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
